@@ -221,4 +221,23 @@ footer {
     footer {
         font-size: 12px;
     }
+
+    /* ===== HARGA PRODUK ===== */
+
+.product-price {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c3392c;
+}
+
+/* ===== PENYESUAIAN HARGA DI HP ===== */
+
+@media (max-width: 600px) {
+
+    .product-price {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
 }
