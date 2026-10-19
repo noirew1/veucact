@@ -1,10 +1,4 @@
-/* ===== FONT MEDIEVAL ===== */
-
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
-
-/* ===== PENGATURAN DASAR ===== */
-
+/* Pengaturan dasar */
 * {
     margin: 0;
     padding: 0;
@@ -12,232 +6,72 @@
 }
 
 body {
-    font-family: 'MedievalSharp', serif;
-    background-color: #ffffff;
-    color: #c3392c;
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-
-/* ===== HEADER ===== */
-
+/* Header */
 header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 0 25px;
-    border-bottom: 2px solid #c3392c;
-}
-
-.header-profile {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #c3392c;
-}
-
-.header-name {
-    font-size: 32px;
-    font-weight: bold;
-    color: #c3392c;
-}
-
-
-/* ===== PROFIL UTAMA ===== */
-
-.hero {
+    padding: 25px;
     text-align: center;
-    padding: 90px 15px 50px;
-    border-bottom: 2px solid #c3392c;
+    border-bottom: 1px solid #333333;
 }
 
-.main-profile {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #c3392c;
-    margin-bottom: 20px;
-}
-
-/* VEUCACT DIBESARKAN */
-
-.hero h1 {
-    font-size: 52px;
-    font-weight: bold;
-    margin-bottom: 8px;
+/* Logo Medieval */
+.logo {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 42px;
     color: #c3392c;
+    letter-spacing: 3px;
 }
 
-/* COMMISSION */
-
-.hero h2 {
-    font-size: 34px;
-    font-weight: normal;
-    margin-bottom: 8px;
-}
-
-/* SKIN MINECRAFT */
-
-.hero p {
-    font-size: 28px;
-}
-
-
-/* ===== PRODUK ===== */
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 35px;
-    padding: 65px 0;
-}
-
-.product-card {
-    min-width: 0;
-    text-align: center;
-}
-
-.product-image {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    display: block;
-    background-color: #f5f5f5;
-    border: 2px solid #c3392c;
-    border-radius: 8px;
-}
-
-.product-card h3 {
-    margin-top: 15px;
-    font-size: 20px;
-}
-
-.product-card p {
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #cccccc;
     margin-top: 8px;
-    font-size: 16px;
-    color: #555555;
 }
 
+/* Konten utama */
+main {
+    text-align: center;
+    padding: 80px 20px;
+}
 
-/* ===== TOMBOL ORDER ===== */
+h2 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
 
-.order-button {
+p {
+    color: #bbbbbb;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Tombol */
+.button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 22px;
+    margin-top: 25px;
+    padding: 12px 28px;
     background-color: #c3392c;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
-    transition: 0.2s;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.order-button:hover {
-    background-color: #982b22;
-    transform: translateY(-2px);
+.button:hover {
+    background-color: #992b22;
 }
 
-
-/* ===== FOOTER ===== */
-
+/* Footer */
 footer {
     text-align: center;
-    padding: 25px 10px;
-    border-top: 1px solid #eeeeee;
+    padding: 20px;
     color: #777777;
-    font-size: 14px;
-}
-
-
-/* ===== RESPONSIVE UNTUK HP ===== */
-
-@media (max-width: 600px) {
-
-    .container {
-        padding: 15px;
-    }
-
-    .header-profile {
-        width: 50px;
-        height: 50px;
-    }
-
-    .header-name {
-        font-size: 28px;
-    }
-
-    .hero {
-        padding: 65px 10px 40px;
-    }
-
-    .main-profile {
-        width: 145px;
-        height: 145px;
-        margin-bottom: 22px;
-    }
-
-    /* VEUCACT LEBIH BESAR DI HP */
-
-    .hero h1 {
-        font-size: 46px;
-        margin-bottom: 10px;
-    }
-
-    .hero h2 {
-        font-size: 29px;
-        margin-bottom: 8px;
-    }
-
-    .hero p {
-        font-size: 23px;
-    }
-
-    .products {
-        gap: 12px;
-        padding: 40px 0;
-    }
-
-    .product-card h3 {
-        font-size: 14px;
-    }
-
-    .product-card p {
-        font-size: 12px;
-    }
-
-    .order-button {
-        padding: 8px 10px;
-        font-size: 12px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-
-    /* ===== HARGA PRODUK ===== */
-
-.product-price {
-    margin-top: 12px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #c3392c;
-}
-
-/* ===== PENYESUAIAN HARGA DI HP ===== */
-
-@media (max-width: 600px) {
-
-    .product-price {
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
+    font-size: 12px;
 }
